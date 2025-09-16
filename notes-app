@@ -1729,7 +1729,7 @@ _edit() {
   if _note_has_attachments "${_note_id}"
   then
     printf "Note has attachments and can not be edited safely.\\n"
-    return 1
+    # return 1
   fi
 
   printf "%s\\n" "${_name}" >> "${_temp_file}"
@@ -2950,7 +2950,7 @@ _update() {
   if _note_has_attachments "${_id}"
   then
     printf "Note has attachments and can not be edited safely.\\n"
-    return 1
+    # return 1
   fi
 
   if [[ -z "${_account_name:-}" ]]
